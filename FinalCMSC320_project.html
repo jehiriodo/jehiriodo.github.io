@@ -1,0 +1,2252 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>c5acad4e4f0443849793f66c727caa5e</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="data-exploration-gpa-gender-and-exercise-patterns"
+class="cell markdown" id="acb7NvWyUJRY">
+<h1><strong>Data Exploration: GPA, Gender, and Exercise
+Patterns</strong></h1>
+<p>Summer 2025 Data Science Project</p>
+<p>Suhani Patel, Jonathan Ehiriodo, Tahir Beverly, Jasper Coles Hood</p>
+</section>
+<div class="cell markdown" id="pfN0LFs8Wyhp">
+<p>Contributions:</p>
+<p>Suhani Patel : (B) Dataset Curation and Preprocessing, Suhani
+imported, parsed, and organized our data. (C) Data exploration and
+Summary Statistics, everyone split up this work. Suhani did Conclusion 3
+using the BRFSS data and used the chi-squared test. Suhani also created
+the plot. (G) Final Tutorial Report Creation, Suhani formatted the final
+site and wrote the headers and introduction.</p>
+<p>Jonathan Ehiriodo : (A) Project idea, while everyone shared their
+interestests Jonathan came up with the idea to work on something
+involving fitness. (C) Data exploration and Summary Statistics, everyone
+split up this work. Jonathan did Conclusion 1 using FitBit data and used
+T test. Jonathan also created the plot. (E)(F)He also provided some
+visuals for the ML methods we used and provided the overall conclusion
+for checkpoint 3</p>
+<p>Tahir Beverly : (C) Data exploration and Summary Statistics, everyone
+split up this work. Tahir did one conclusion using FitBit data and used
+Z test. (E and F) Did additional prep-work for ML training and performed
+test-metrics for different models of Regression and Classification.</p>
+<p>Jasper Hood : (C) Data exploration and Summary Statistics, everyone
+split up this work. Jasper created the plot for Conclusion 2. (G) He
+also wrote the information about the EDA and data sets. (D/E) He tested
+different parameters for the random forest model and evaulated the
+performance with Tahir (F) He visualized max depth</p>
+<h1 id="need-to-write-these-in-our-contributions-once-completed">*(NEED
+TO WRITE THESE IN OUR CONTRIBUTIONS ONCE COMPLETED)</h1>
+</div>
+<section id="introduction" class="cell markdown" id="X1qHSN3XdIiD">
+<h1>Introduction</h1>
+<p>Physical activity and academic performance are both important
+indicators of overall well-being, particularly among students. In this
+project, we explore the relationships between exercise habits, gender,
+and academic outcomes using two datasets: one from Fitbit users that
+includes GPA and fitness behavior, and another from the 2017 Behavioral
+Risk Factor Surveillance System (BRFSS) that captures national fitness
+trends.</p>
+<p>Our analysis seeks to answer the following questions:</p>
+<ol>
+<li><p>Is the average GPA of students who run regularly higher than
+those who walk?</p></li>
+<li><p>Do women have significantly different GPAs compared to the
+general student population?</p></li>
+<li><p>Are people more likely to meet aerobic activity guidelines than
+strength training guidelines in 2017?</p></li>
+</ol>
+<p>These questions help us understand not only the potential links
+between physical activity and academic achievement, but also broader
+public health patterns. Insights from this exploration can inform both
+educational institutions and health organizations as they design
+programs to support student success and nationwide fitness goals.</p>
+</section>
+<div class="cell markdown" id="tHcbWmzqE0qt">
+<p>Data Curation/Preprocessing:</p>
+</div>
+<div class="cell code" data-execution_count="1" id="mdssb0ftEyDx">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> math <span class="im">import</span> sqrt</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> google.colab <span class="im">import</span> drive</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># drive.mount(&#39;/content/drive&#39;)</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># data_dir = &#39;/content/drive/MyDrive/PATH_TO_FILES&#39;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># fitbit_df = pd.read_csv(data_dir)</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># brfss = pd.read_csv(data_dir)</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>fitbit_df <span class="op">=</span> pd.read_csv(<span class="st">&#39;FitbitsAndGradesData_Fall2017.csv&#39;</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>brfss <span class="op">=</span> pd.read_csv(<span class="st">&#39;BRFSS_Physical_Acticity.csv&#39;</span>)</span></code></pre></div>
+</div>
+<section id="exploratory-data-analysis" class="cell markdown"
+id="K0arzJElRMhj">
+<h2>Exploratory data analysis</h2>
+<p>This data comes from <a
+href="https://www.kaggle.com/datasets/aleespinosa/fitbits-fieldtests-and-grades"
+class="uri">https://www.kaggle.com/datasets/aleespinosa/fitbits-fieldtests-and-grades</a>
+and <a
+href="https://www.kaggle.com/datasets/asasherwyn/brfss-physical-activity-2015-2021?select=BRFSS+Physical+Acticity.csv"
+class="uri">https://www.kaggle.com/datasets/asasherwyn/brfss-physical-activity-2015-2021?select=BRFSS+Physical+Acticity.csv</a>
+The first dataset describes the fitbit collected data of 581 college
+students at ORU, as well as their GPA's throughout the sample time.
+Student identities are kept secret, and where participants in an
+experiment that required they track certain physical statistics. Tracked
+statistics include steps, peak activity, cardio, mode of excercise, fat
+burned, minutes of excercise, along with gender and age</p>
+<p>The second dataset comes from the Behavioral Risk Factor Surveillance
+System, which used surveys to gain insights about US adult phsyical
+health. They asked a series of four questions that asked: A: During the
+past month, did you participate in any physical activities? B:
+Participated in 150 minutes or more of Aerobic Physical Activity per
+week? C: Participated in enough Aerobic and Muscle Strengthening
+exercises to meet guidelines? D: Participated in muscle strengthening
+exercises two or more times per week?</p>
+<p>These data were collected between 2015 and 2021 and are organized by
+year and state.</p>
+</section>
+<div class="cell markdown" id="E3gsrKQ0E8b2">
+<p><strong>Conclusion 1: Using FitBit data</strong></p>
+<p>NOTE: For Gender 0 is men and 1 is women AND for Mode 0 is walk and 1
+is run for the cardio The columns are, for the most part, in a great
+order relative to each other; however, we decided to move Mode next to
+Cardio to logically show the type of cardio being done. The dataset has
+11 features that all relate directly to the exercise habits of the
+interviewed subjects.</p>
+</div>
+<div class="cell markdown" id="AcJAGy66ze4o">
+<p>Null hypothesis: Average GPA for runners will be less than or equal
+to the walkers</p>
+<p>Alternative hypothesis: Average GPA for runners will be greater than
+the walkers</p>
+<p>We are fairly confident so a significance of .02 will be used;
+confidence level 98%</p>
+<p>n=581</p>
+</div>
+<div class="cell code" data-execution_count="2"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:669}"
+id="v16Tp_B0Jt-1" data-outputId="015519b6-ba25-4852-de0f-14241ccfe90d">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>fitBitData <span class="op">=</span> fitbit_df</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#fitBitData</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>fitBitData <span class="op">=</span> fitBitData[[<span class="st">&#39;Key&#39;</span>, <span class="st">&#39;Steps&#39;</span>, <span class="st">&#39;Peak&#39;</span>, <span class="st">&#39;Cardio&#39;</span>, <span class="st">&#39;Mode&#39;</span>, <span class="st">&#39;FatBurn&#39;</span>, <span class="st">&#39;Minutes&#39;</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>                         <span class="st">&#39;Gender&#39;</span>, <span class="st">&#39;Age&#39;</span>, <span class="st">&#39;GPA&#39;</span>, <span class="st">&#39;Life Score&#39;</span>]]</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Analysis of GPA relative to cardio mode chosen/used using T test.&quot;</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Median value is red line and mean is the tip of the green arrow.&quot;</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>gpaWalk <span class="op">=</span> fitBitData[fitBitData[<span class="st">&#39;Mode&#39;</span>] <span class="op">==</span> <span class="dv">0</span>][<span class="st">&#39;GPA&#39;</span>]</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>gpaRun <span class="op">=</span> fitBitData[fitBitData[<span class="st">&#39;Mode&#39;</span>] <span class="op">==</span> <span class="dv">1</span>][<span class="st">&#39;GPA&#39;</span>]</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>plt.boxplot([gpaWalk, gpaRun], patch_artist<span class="op">=</span><span class="va">True</span>,showmeans<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>            boxprops<span class="op">=</span><span class="bu">dict</span>(facecolor<span class="op">=</span><span class="st">&#39;lightblue&#39;</span>),</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>            medianprops<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&#39;red&#39;</span>))</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>plt.xticks([<span class="dv">1</span>, <span class="dv">2</span>], [<span class="st">&#39;Walk&#39;</span>, <span class="st">&#39;Run&#39;</span>])</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;GPA by Mode of Exercise (Walk vs Run)&#39;</span>)</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Mode of Exercise&#39;</span>)</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;GPA&#39;</span>)</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>tValue, pValueTwoSample <span class="op">=</span> stats.ttest_ind(gpaRun, gpaWalk, equal_var<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> tValue <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>    pValueTwoSample <span class="op">=</span> pValueTwoSample <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>    pValueTwoSample <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> (pValueTwoSample <span class="op">/</span> <span class="dv">2</span>)</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;T-statistic: </span><span class="sc">{</span>tValue<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;p-value (H₁: runners &gt; walkers): </span><span class="sc">{</span>pValueTwoSample<span class="sc">:.4f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;As seen, the p value is less than the significance level(.02) such that we can reject the Null.&quot;</span>)</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;We can conclude that the average GPA for runners is actually greater than that of&quot;</span>)</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;the walkers&quot;</span>)</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Analysis of GPA relative to cardio mode chosen/used using T test.
+Median value is red line and mean is the tip of the green arrow.
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_c765773bf3df40e2a39674271f334b16/3d0a5354a40362b981939b33d1c104ed72791c8b.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>T-statistic: 2.703
+p-value (H₁: runners &gt; walkers): 0.0040
+As seen, the p value is less than the significance level(.02) such that we can reject the Null.
+We can conclude that the average GPA for runners is actually greater than that of
+the walkers
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="PU4_kYcTFAC7">
+<p><strong>Conclusion 2: Using FitBit data</strong></p>
+<p>Question: Do women have higher GPA's on average?</p>
+<p>Null hypothesis: There is no significant difference between the
+average gpa of female students and the average gpa of the population</p>
+<p>Alernative hypothesis: The average GPA based on gender is not equal.
+(There is significant difference)</p>
+<p>Z-test comparing the sample GPA of women at the university vs the
+entire dataset</p>
+</div>
+<div class="cell code" data-execution_count="3"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="CDXae0h0WBLf" data-outputId="4e371c0e-95f1-4bf7-8203-0c66db841695">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample mean (GPA for women)</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>xbar <span class="op">=</span> fitBitData[fitBitData[<span class="st">&#39;Gender&#39;</span>] <span class="op">==</span> <span class="dv">1</span>][<span class="st">&#39;GPA&#39;</span>].mean()</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;sample mean: </span><span class="sc">{</span>xbar<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample size (# of women)</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">len</span>(fitBitData[fitBitData[<span class="st">&#39;Gender&#39;</span>] <span class="op">==</span> <span class="dv">1</span>][<span class="st">&#39;GPA&#39;</span>])</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;sample size: </span><span class="sc">{</span>n<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Population Mean</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>mu <span class="op">=</span> fitBitData[<span class="st">&#39;GPA&#39;</span>].mean()</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;population mean: </span><span class="sc">{</span>mu<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Population std dev</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>sigma <span class="op">=</span> fitBitData[<span class="st">&#39;GPA&#39;</span>].std()</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;population std dev: </span><span class="sc">{</span>sigma<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Alpha (Significance) Level</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>alpha <span class="op">=</span> <span class="fl">0.05</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Z-score</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> (xbar <span class="op">-</span> mu) <span class="op">/</span> (sigma <span class="op">/</span> sqrt(n))</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Total Tail Area (p-value)</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>twoTail <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> (<span class="dv">1</span> <span class="op">-</span> stats.norm.cdf(<span class="bu">abs</span>(z)))</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;z-score: </span><span class="sc">{</span>z<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;p-value </span><span class="sc">{</span>twoTail<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> twoTail <span class="op">&lt;=</span> alpha:</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&#39;Rejection of H0: There is a significant difference between means&#39;</span>)</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&#39;Fail to Reject H0: Average GPA is equivalent between women and population&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>sample mean: 3.2782848837209304
+sample size: 344
+population mean: 3.186919104991394
+population std dev: 0.7577477803445738
+z-score: 2.236341425101386
+p-value 0.0253294148780987
+Rejection of H0: There is a significant difference between means
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="4"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:527}"
+id="Yv_QZjHnsOFt" data-outputId="b1c83c64-d59b-4bfc-c9a4-56f8e8d2781e">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>gpaWomen <span class="op">=</span> fitBitData[fitBitData[<span class="st">&#39;Gender&#39;</span>] <span class="op">==</span> <span class="dv">1</span>][<span class="st">&#39;GPA&#39;</span>]</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>gpaAll <span class="op">=</span> fitBitData[<span class="st">&#39;GPA&#39;</span>]</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>plt.boxplot([gpaWomen, gpaAll], patch_artist<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>            boxprops<span class="op">=</span><span class="bu">dict</span>(facecolor<span class="op">=</span><span class="st">&#39;lightblue&#39;</span>),</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>            medianprops<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">&#39;red&#39;</span>), showmeans<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>plt.xticks([<span class="dv">1</span>, <span class="dv">2</span>], [<span class="st">&#39;Women&#39;</span>, <span class="st">&#39;Population&#39;</span>])</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;GPA by Gender (Women vs Population)&#39;</span>)</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Gender&#39;</span>)</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;GPA&#39;</span>)</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_c765773bf3df40e2a39674271f334b16/cb89f609aedec35408cd0f4ab21ba6e82683ffe7.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="Oq5uvzRyFAKh">
+<p><strong>Conclusion 3: Using BRFSS Data</strong></p>
+<p><em>Question:</em> Are people more likely to meet aerobic guidelines
+than strength training guidelines in 2017?</p>
+<p><em>Null hypothesis:</em> People are equally likely to meet aerobic
+and strength guidelines in 2017. (There is no difference)</p>
+<p><em>Alernative hypothesis:</em> People are more likely to meet
+aerobic guidelines than strength guidelines in 2017. (There is
+significant difference)</p>
+<p>Analysis of amount of people meeting aerobic guidelines vs strength
+training guidlines in 2017 using <strong>Chi-squared test</strong>.</p>
+</div>
+<div class="cell code" data-execution_count="5"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="InJeOAqzLthV" data-outputId="b2da426d-e04e-4df4-954e-63b0bd9c8f5b">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> chi2_contingency</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>brfss_2021 <span class="op">=</span> brfss[brfss[<span class="st">&#39;year&#39;</span>]<span class="op">==</span> <span class="dv">2017</span>].iloc[<span class="dv">0</span>]</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Activity&#39;</span>: [<span class="st">&#39;Aerobic&#39;</span>, <span class="st">&#39;Aerobic&#39;</span>, <span class="st">&#39;Strength&#39;</span>, <span class="st">&#39;Strength&#39;</span>],</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Meet_Guidelines&#39;</span>: [<span class="st">&#39;Yes&#39;</span>, <span class="st">&#39;No&#39;</span>, <span class="st">&#39;Yes&#39;</span>, <span class="st">&#39;No&#39;</span>],</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;count&#39;</span>: [</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>        brfss_2021[<span class="st">&#39;PAINDX2_yes_value&#39;</span>],</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>        brfss_2021[<span class="st">&#39;PAINDX2_no_value&#39;</span>],</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>        brfss_2021[<span class="st">&#39;PASTRNG_yes_value&#39;</span>],</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>        brfss_2021[<span class="st">&#39;PASTRNG_no_value&#39;</span>]</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>brfss_counts <span class="op">=</span> pd.DataFrame(data)</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>contingency_table <span class="op">=</span> pd.crosstab(brfss_counts[<span class="st">&#39;Activity&#39;</span>],</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>                                brfss_counts[<span class="st">&#39;Meet_Guidelines&#39;</span>],</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>                                values <span class="op">=</span> brfss_counts[<span class="st">&#39;count&#39;</span>],</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>                                aggfunc<span class="op">=</span><span class="st">&#39;sum&#39;</span>)</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Contingency Table:</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(contingency_table.to_string(index<span class="op">=</span><span class="va">True</span>))</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>chi2, p_value, dof, expected <span class="op">=</span> chi2_contingency(contingency_table)</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="ss">Chi-square statistic: </span><span class="sc">{</span>chi2<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="ss">P-value: </span><span class="sc">{</span>p_value<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="ss">Degrees of freedom: </span><span class="sc">{</span>dof<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="ss">Expected frequencies: </span><span class="sc">{</span>expected<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>alpha <span class="op">=</span> <span class="fl">0.05</span></span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> p_value <span class="op">&lt;</span> alpha:</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Reject null hypothesis. There is a significant difference in participation between aerobic and strength training.&quot;</span>)</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Fail to reject null hypothesis. There is no significant difference in participation between aerobic and strength training.&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Contingency Table:
+
+Meet_Guidelines    No   Yes
+Activity                   
+Aerobic          57.2  42.8
+Strength         74.0  26.0
+
+Chi-square statistic: 5.531232274532046
+
+P-value: 0.018679944835576587
+
+Degrees of freedom: 1
+
+Expected frequencies: [[65.6 34.4]
+ [65.6 34.4]]
+
+Reject null hypothesis. There is a significant difference in participation between aerobic and strength training.
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="6"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:452}"
+id="qkMxaOeoTcdw" data-outputId="ca0f0600-15d6-4805-b5bd-72fbf0b76fc8">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Plot</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> [<span class="st">&#39;Met Guideles&#39;</span>, <span class="st">&#39;Did Not Meet&#39;</span>]</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>aerobic <span class="op">=</span> [<span class="fl">42.8</span>, <span class="fl">57.2</span>]</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>strength <span class="op">=</span> [<span class="dv">26</span>, <span class="dv">74</span>]</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="bu">range</span>(<span class="bu">len</span>(labels))</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>plt.bar(x, aerobic, width<span class="op">=</span><span class="fl">0.4</span>, label<span class="op">=</span><span class="st">&#39;Aerobic&#39;</span>, align<span class="op">=</span><span class="st">&#39;center&#39;</span>)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>plt.bar([i<span class="op">+</span><span class="fl">0.4</span> <span class="cf">for</span> i <span class="kw">in</span> x], strength, width <span class="op">=</span> <span class="fl">0.4</span>, label<span class="op">=</span><span class="st">&#39;Strength&#39;</span>, align<span class="op">=</span><span class="st">&#39;center&#39;</span>)</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>plt.xticks([i<span class="op">+</span><span class="fl">0.2</span> <span class="cf">for</span> i <span class="kw">in</span> x], labels)</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Percentage of Respondents&#39;</span>)</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Comparison of Aerobic vs Strength Training Participation (2017)&#39;</span>)</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_c765773bf3df40e2a39674271f334b16/14440922a96aad4dadb63a77ef9dcba79b757217.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="TUpxgTot4fU0">
+<p><a
+href="https://www.researchgate.net/profile/Andrew-Lang-13/publication/333456807_Fitbits_field-tests_and_grades_The_effects_of_a_healthy_and_physically_active_lifestyle_on_the_academic_performance_of_first_year_college_students/links/5ed14785299bf1c67d273bbb/Fitbits-field-tests-and-grades-The-effects-of-a-healthy-and-physically-active-lifestyle-on-the-academic-performance-of-first-year-college-students.pdf?origin=publication_detail">more
+about dataset 1</a></p>
+</div>
+<div class="cell markdown" id="R9RUKNbDv4G_">
+<p>Primary Analysis (Machine Learning)</p>
+</div>
+<div class="cell code" data-execution_count="7" id="9wW3gpZzwyK5">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Libraries</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.pipeline <span class="im">import</span> make_pipeline</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split,cross_val_score, cross_val_predict, KFold</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="co"># evaluation metrics</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_squared_error, r2_score</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="co"># regressor imports</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression, Ridge, Lasso, ElasticNet</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestRegressor</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.svm <span class="im">import</span> SVR</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.tree <span class="im">import</span> DecisionTreeRegressor</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.neighbors <span class="im">import</span> KNeighborsRegressor</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="8"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:327}"
+id="H6oVjdgUv8Kj" data-outputId="ab1b8ce7-9256-4ab4-9de2-f863bafbdd47">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dataset 1 temporary additional preprocessing + eda</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># LifeScore determined via health survey:</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co">#   (Very Healthy: &lt;40, Healthy: 41-70, Avg: 71-100, Unhealthy: 101-130, Very Unhealthy: &gt;131)</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co"># FatBurn: total active minutes in FatBurn zone -&gt; heart rate within 50% - 69% of its maximum</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Cardio: total active minutes in Cardio zone -&gt; heart rate within 70% - 84% of its maximum</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Peak: total active minutes in Peak zone -&gt; heart rate &gt; 85% of its maximum</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;Shape:&#39;</span>, fitbit_df.shape)</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Number of Samples: </span><span class="sc">{</span><span class="bu">len</span>(fitbit_df)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Number of Features: </span><span class="sc">{</span><span class="bu">len</span>(fitbit_df.columns)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(fitbit_df.columns)</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>fitbit_df.head()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Shape: (581, 11)
+Number of Samples: 581
+Number of Features: 11
+Index([&#39;Key&#39;, &#39;Steps&#39;, &#39;Peak&#39;, &#39;Cardio&#39;, &#39;FatBurn&#39;, &#39;Mode&#39;, &#39;Minutes&#39;,
+       &#39;Gender&#39;, &#39;Age&#39;, &#39;GPA&#39;, &#39;Life Score&#39;],
+      dtype=&#39;object&#39;)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="8">
+
+  <div id="df-ff72a9b2-d8be-4217-8e51-c1a5caa97375" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Key</th>
+      <th>Steps</th>
+      <th>Peak</th>
+      <th>Cardio</th>
+      <th>FatBurn</th>
+      <th>Mode</th>
+      <th>Minutes</th>
+      <th>Gender</th>
+      <th>Age</th>
+      <th>GPA</th>
+      <th>Life Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>11157</td>
+      <td>0.13</td>
+      <td>3.86</td>
+      <td>111.92</td>
+      <td>1</td>
+      <td>9.35</td>
+      <td>1</td>
+      <td>23</td>
+      <td>4.00</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>7986</td>
+      <td>2.72</td>
+      <td>15.53</td>
+      <td>249.29</td>
+      <td>1</td>
+      <td>8.20</td>
+      <td>1</td>
+      <td>18</td>
+      <td>3.26</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>11602</td>
+      <td>0.35</td>
+      <td>2.10</td>
+      <td>195.32</td>
+      <td>0</td>
+      <td>12.73</td>
+      <td>0</td>
+      <td>18</td>
+      <td>3.07</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>10609</td>
+      <td>1.00</td>
+      <td>6.51</td>
+      <td>121.75</td>
+      <td>1</td>
+      <td>10.00</td>
+      <td>1</td>
+      <td>17</td>
+      <td>4.00</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>14552</td>
+      <td>9.10</td>
+      <td>6.09</td>
+      <td>109.66</td>
+      <td>1</td>
+      <td>8.63</td>
+      <td>0</td>
+      <td>18</td>
+      <td>2.87</td>
+      <td>83</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-ff72a9b2-d8be-4217-8e51-c1a5caa97375')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-ff72a9b2-d8be-4217-8e51-c1a5caa97375 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-ff72a9b2-d8be-4217-8e51-c1a5caa97375');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-2e7180fa-236b-48ef-aecc-666f9f3850b9">
+      <button class="colab-df-quickchart" onclick="quickchart('df-2e7180fa-236b-48ef-aecc-666f9f3850b9')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-2e7180fa-236b-48ef-aecc-666f9f3850b9 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="rmw6cvrDzBv3">
+<p>Minutes measures students recorded times for a 1-mile field test. In
+preliminary testing for correlation, this field was one of the lowest in
+relation to GPA. We also already have an index column so 'Key' will be
+dropped.</p>
+</div>
+<div class="cell code" data-execution_count="9"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:243}"
+id="LtuPT1qJOjSv" data-outputId="42de3f3a-9f12-4831-85de-703b63de7135">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># additional cleaning</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>fitbit_df1 <span class="op">=</span> fitbit_df.copy()</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>fitbit_df1 <span class="op">=</span> fitbit_df1.drop(columns<span class="op">=</span>[<span class="st">&#39;Key&#39;</span>,<span class="st">&#39;Minutes&#39;</span>]) <span class="co"># don&#39;t need</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>fitbit_df1[<span class="st">&#39;TotalActiveMinutes&#39;</span>] <span class="op">=</span> fitbit_df1[<span class="st">&#39;Peak&#39;</span>] <span class="op">+</span> fitbit_df1[<span class="st">&#39;Cardio&#39;</span>] <span class="op">+</span> fitbit_df1[<span class="st">&#39;FatBurn&#39;</span>]</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>fitbit_df1.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="9">
+
+  <div id="df-b094d714-bfe7-4d82-98fa-fcb7749267d7" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Steps</th>
+      <th>Peak</th>
+      <th>Cardio</th>
+      <th>FatBurn</th>
+      <th>Mode</th>
+      <th>Gender</th>
+      <th>Age</th>
+      <th>GPA</th>
+      <th>Life Score</th>
+      <th>TotalActiveMinutes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>11157</td>
+      <td>0.13</td>
+      <td>3.86</td>
+      <td>111.92</td>
+      <td>1</td>
+      <td>1</td>
+      <td>23</td>
+      <td>4.00</td>
+      <td>48</td>
+      <td>115.91</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>7986</td>
+      <td>2.72</td>
+      <td>15.53</td>
+      <td>249.29</td>
+      <td>1</td>
+      <td>1</td>
+      <td>18</td>
+      <td>3.26</td>
+      <td>101</td>
+      <td>267.54</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11602</td>
+      <td>0.35</td>
+      <td>2.10</td>
+      <td>195.32</td>
+      <td>0</td>
+      <td>0</td>
+      <td>18</td>
+      <td>3.07</td>
+      <td>64</td>
+      <td>197.77</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10609</td>
+      <td>1.00</td>
+      <td>6.51</td>
+      <td>121.75</td>
+      <td>1</td>
+      <td>1</td>
+      <td>17</td>
+      <td>4.00</td>
+      <td>41</td>
+      <td>129.26</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>14552</td>
+      <td>9.10</td>
+      <td>6.09</td>
+      <td>109.66</td>
+      <td>1</td>
+      <td>0</td>
+      <td>18</td>
+      <td>2.87</td>
+      <td>83</td>
+      <td>124.85</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-b094d714-bfe7-4d82-98fa-fcb7749267d7')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-b094d714-bfe7-4d82-98fa-fcb7749267d7 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-b094d714-bfe7-4d82-98fa-fcb7749267d7');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-107cf325-5e95-4497-ab10-08fb9a6bc8c4">
+      <button class="colab-df-quickchart" onclick="quickchart('df-107cf325-5e95-4497-ab10-08fb9a6bc8c4')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-107cf325-5e95-4497-ab10-08fb9a6bc8c4 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" data-execution_count="10"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="HXXCzPb3Ou73" data-outputId="d937cae9-0a9a-4821-8ffc-004c1343c69f">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>missing_data <span class="op">=</span> {}</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> fitbit_df1:</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  missing_data[col] <span class="op">=</span> <span class="bu">int</span>(fitbit_df1[col].isna().<span class="bu">sum</span>())</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(missing_data) <span class="co"># No missing data! yippee!</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>{&#39;Steps&#39;: 0, &#39;Peak&#39;: 0, &#39;Cardio&#39;: 0, &#39;FatBurn&#39;: 0, &#39;Mode&#39;: 0, &#39;Gender&#39;: 0, &#39;Age&#39;: 0, &#39;GPA&#39;: 0, &#39;Life Score&#39;: 0, &#39;TotalActiveMinutes&#39;: 0}
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="11"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:447}"
+id="rCjqT5vXO0s4" data-outputId="00a6338c-f94b-4069-9b0e-e8354438cf84">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># features v target</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> fitbit_df1.drop(columns<span class="op">=</span>[<span class="st">&#39;GPA&#39;</span>]) <span class="co"># features</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>Y <span class="op">=</span> fitbit_df1[<span class="st">&#39;GPA&#39;</span>] <span class="co"># target</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>display(X.head())</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>display(Y.head())</span></code></pre></div>
+<div class="output display_data">
+
+  <div id="df-477bce20-7d7c-484d-ab00-9bab5a2d8f04" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Steps</th>
+      <th>Peak</th>
+      <th>Cardio</th>
+      <th>FatBurn</th>
+      <th>Mode</th>
+      <th>Gender</th>
+      <th>Age</th>
+      <th>Life Score</th>
+      <th>TotalActiveMinutes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>11157</td>
+      <td>0.13</td>
+      <td>3.86</td>
+      <td>111.92</td>
+      <td>1</td>
+      <td>1</td>
+      <td>23</td>
+      <td>48</td>
+      <td>115.91</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>7986</td>
+      <td>2.72</td>
+      <td>15.53</td>
+      <td>249.29</td>
+      <td>1</td>
+      <td>1</td>
+      <td>18</td>
+      <td>101</td>
+      <td>267.54</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11602</td>
+      <td>0.35</td>
+      <td>2.10</td>
+      <td>195.32</td>
+      <td>0</td>
+      <td>0</td>
+      <td>18</td>
+      <td>64</td>
+      <td>197.77</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10609</td>
+      <td>1.00</td>
+      <td>6.51</td>
+      <td>121.75</td>
+      <td>1</td>
+      <td>1</td>
+      <td>17</td>
+      <td>41</td>
+      <td>129.26</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>14552</td>
+      <td>9.10</td>
+      <td>6.09</td>
+      <td>109.66</td>
+      <td>1</td>
+      <td>0</td>
+      <td>18</td>
+      <td>83</td>
+      <td>124.85</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-477bce20-7d7c-484d-ab00-9bab5a2d8f04')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-477bce20-7d7c-484d-ab00-9bab5a2d8f04 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-477bce20-7d7c-484d-ab00-9bab5a2d8f04');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-9e373f58-8d39-4fdb-a012-93b275a7a5a8">
+      <button class="colab-df-quickchart" onclick="quickchart('df-9e373f58-8d39-4fdb-a012-93b275a7a5a8')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-9e373f58-8d39-4fdb-a012-93b275a7a5a8 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+    </div>
+  </div>
+
+</div>
+<div class="output display_data">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GPA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>4.00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3.26</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3.07</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4.00</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2.87</td>
+    </tr>
+  </tbody>
+</table>
+</div><br><label><b>dtype:</b> float64</label>
+</div>
+</div>
+<div class="cell markdown" id="gm6LQzwpyknq">
+<p>Testing with different regression models. This is a preliminary stage
+using K-Fold cross-validation (instead of Stratified which is used for
+classifications) for a model that could yield the best predictive
+results.</p>
+</div>
+<div class="cell code" data-execution_count="12" id="5CYbr_Yq1IZU">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>models <span class="op">=</span> {</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;LinearRegression&#39;</span>: LinearRegression(),</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;KNN&#39;</span>: KNeighborsRegressor(),</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;SVM&#39;</span>: SVR(),</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;DecisionTree&#39;</span>: DecisionTreeRegressor(),</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;RandomForest&#39;</span>: RandomForestRegressor(),</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Lasso&#39;</span>: Lasso(alpha<span class="op">=</span><span class="fl">0.1</span>),</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Ridge&#39;</span>: Ridge(),</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;ElasticNet&#39;</span>: ElasticNet(alpha<span class="op">=</span><span class="fl">0.1</span>,l1_ratio<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="13"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="_wq_xBLsBEdZ" data-outputId="926dc96e-3f29-4986-922a-4d16402d28bf">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cross Validation</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>seed <span class="op">=</span> <span class="dv">42</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>k_folds <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>kf <span class="op">=</span> KFold(n_splits<span class="op">=</span>k_folds, shuffle<span class="op">=</span><span class="va">True</span>, random_state<span class="op">=</span>seed)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="co"># eva</span></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name, model <span class="kw">in</span> models.items():</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>  np.random.seed(seed) <span class="co"># reproducibility</span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>  pipeline <span class="op">=</span> make_pipeline(StandardScaler(),model)</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>  r2score <span class="op">=</span> cross_val_score(pipeline, X, Y, scoring<span class="op">=</span><span class="st">&#39;r2&#39;</span>,cv<span class="op">=</span>kf)</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>  y_pred <span class="op">=</span> cross_val_predict(pipeline,X,Y,cv<span class="op">=</span>kf)</span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>  mse <span class="op">=</span> mean_squared_error(Y,y_pred)</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>  rmse <span class="op">=</span> np.sqrt(mse)</span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&#39;</span><span class="sc">{</span>name<span class="sc">}</span><span class="ss"> Cross-Validation Metrics:&#39;</span>)</span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&#39;</span><span class="ch">\t</span><span class="ss">R^2: </span><span class="sc">{</span>r2score<span class="sc">.</span>mean()<span class="sc">}</span><span class="ss"> (+/- </span><span class="sc">{</span>r2score<span class="sc">.</span>std()<span class="sc">}</span><span class="ss">)&#39;</span>)</span>
+<span id="cb19-18"><a href="#cb19-18" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&#39;</span><span class="ch">\t</span><span class="ss">MSE: </span><span class="sc">{</span>mse<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&#39;</span><span class="ch">\t</span><span class="ss">RMSE: </span><span class="sc">{</span>rmse<span class="sc">}</span><span class="ss">&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>LinearRegression Cross-Validation Metrics:
+	R^2: 0.17192172124017768 (+/- 0.07512336717933395)
+	MSE: 0.4659720935658091
+	RMSE: 0.6826214863054115
+KNN Cross-Validation Metrics:
+	R^2: 0.08933526945691336 (+/- 0.05504705868796181)
+	MSE: 0.5121881032702237
+	RMSE: 0.7156731818855753
+SVM Cross-Validation Metrics:
+	R^2: 0.1583371884497336 (+/- 0.08005965881411303)
+	MSE: 0.47690140718439666
+	RMSE: 0.6905804856672368
+DecisionTree Cross-Validation Metrics:
+	R^2: -0.46268722891178504 (+/- 0.293930948407037)
+	MSE: 0.8299826161790017
+	RMSE: 0.9110338172532355
+RandomForest Cross-Validation Metrics:
+	R^2: 0.19112600061017013 (+/- 0.05882012903647047)
+	MSE: 0.4558006707573149
+	RMSE: 0.6751301139464265
+Lasso Cross-Validation Metrics:
+	R^2: 0.12697222449222836 (+/- 0.02799181598171438)
+	MSE: 0.4912000102035124
+	RMSE: 0.7008566259967244
+Ridge Cross-Validation Metrics:
+	R^2: 0.17197325674773306 (+/- 0.07501993599519166)
+	MSE: 0.4659514678977154
+	RMSE: 0.6826063784478691
+ElasticNet Cross-Validation Metrics:
+	R^2: 0.15508900741799325 (+/- 0.04567997609909033)
+	MSE: 0.47564610106055855
+	RMSE: 0.6896710092939666
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="14"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:397}"
+id="y4Emb7HoPmMS" data-outputId="3bf36e0b-8dfb-4f72-da5c-d02a337c3476">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># hmmm really low R^2 values and other metrics not looking too good. What&#39;s up with the correlation?</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>fitbit_df1.corr()[<span class="st">&#39;GPA&#39;</span>].sort_values(ascending<span class="op">=</span><span class="va">False</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="14">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GPA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>GPA</th>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>Steps</th>
+      <td>0.411026</td>
+    </tr>
+    <tr>
+      <th>FatBurn</th>
+      <td>0.148278</td>
+    </tr>
+    <tr>
+      <th>Gender</th>
+      <td>0.145391</td>
+    </tr>
+    <tr>
+      <th>TotalActiveMinutes</th>
+      <td>0.143569</td>
+    </tr>
+    <tr>
+      <th>Mode</th>
+      <td>0.114493</td>
+    </tr>
+    <tr>
+      <th>Cardio</th>
+      <td>0.069995</td>
+    </tr>
+    <tr>
+      <th>Peak</th>
+      <td>-0.011124</td>
+    </tr>
+    <tr>
+      <th>Age</th>
+      <td>-0.014207</td>
+    </tr>
+    <tr>
+      <th>Life Score</th>
+      <td>-0.112735</td>
+    </tr>
+  </tbody>
+</table>
+</div><br><label><b>dtype:</b> float64</label>
+</div>
+</div>
+<div class="cell markdown" id="75pylEVb1iEy">
+<p>'In the Zone' individual correlations (FatBurn, Cardio, Peak) not too
+good so will combine them and drop the individual scores. Will also drop
+life score (there was not a lot of confidence in the paper/source's data
+collection of this anyway). RandomForest seems to be doing the best
+somewhat so will move forward with that.</p>
+</div>
+<div class="cell code" data-execution_count="15" id="wV2uDdIZmPQ9">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># partition</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>fitbit_df1 <span class="op">=</span> fitbit_df1.drop(columns<span class="op">=</span>[<span class="st">&#39;FatBurn&#39;</span>,<span class="st">&#39;Cardio&#39;</span>,<span class="st">&#39;Peak&#39;</span>,<span class="st">&#39;Life Score&#39;</span>])</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> fitbit_df1.drop(columns<span class="op">=</span>[<span class="st">&#39;GPA&#39;</span>])</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>Y <span class="op">=</span> fitbit_df1[<span class="st">&#39;GPA&#39;</span>]</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X,Y,test_size<span class="op">=</span><span class="fl">0.42</span>,random_state<span class="op">=</span>seed)</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>X_train_scaled <span class="op">=</span> StandardScaler().fit_transform(X_train)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>X_test_scaled <span class="op">=</span> StandardScaler().fit_transform(X_test)</span></code></pre></div>
+</div>
+<section id="training-w-random-forest-regression" class="cell markdown"
+id="_O6Bbvozfp45">
+<h3>Training w/ Random Forest Regression</h3>
+</section>
+<div class="cell code" data-execution_count="16"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="xxwe9GWZgAdD" data-outputId="0407654d-8512-4f5e-d4cf-f845a3d0df17">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> models.get(<span class="st">&quot;RandomForest&quot;</span>)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>model.fit(X_train_scaled,y_train)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> model.predict(X_test_scaled)</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>mse <span class="op">=</span> mean_squared_error(y_test, y_pred)</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>rmse <span class="op">=</span> np.sqrt(mse)</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>r2 <span class="op">=</span> r2_score(y_test, y_pred)</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>y_pred_train <span class="op">=</span> model.predict(X_train_scaled)</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>mse_train <span class="op">=</span> mean_squared_error(y_train, y_pred_train)</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>rmse_train <span class="op">=</span> np.sqrt(mse_train)</span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>r2_train <span class="op">=</span> r2_score(y_train, y_pred_train)</span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;RandomForest: Test Stats&#39;</span>)</span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;</span><span class="ch">\t</span><span class="ss">R^2: </span><span class="sc">{</span>r2<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;</span><span class="ch">\t</span><span class="ss">MSE: </span><span class="sc">{</span>mse<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;</span><span class="ch">\t</span><span class="ss">RMSE: </span><span class="sc">{</span>rmse<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-19"><a href="#cb23-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;RandomForest: Train Stats&#39;</span>)</span>
+<span id="cb23-20"><a href="#cb23-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;</span><span class="ch">\t</span><span class="ss">R^2: </span><span class="sc">{</span>r2_train<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb23-21"><a href="#cb23-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;</span><span class="ch">\t</span><span class="ss">MSE: </span><span class="sc">{</span>mse_train<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb23-22"><a href="#cb23-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;</span><span class="ch">\t</span><span class="ss">RMSE: </span><span class="sc">{</span>rmse_train<span class="sc">}</span><span class="ss">&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>RandomForest: Test Stats
+	R^2: 0.040429473761297574
+	MSE: 0.4905482249795918
+	RMSE: 0.7003914798022545
+RandomForest: Train Stats
+	R^2: 0.8742943043122018
+	MSE: 0.07747179392857143
+	RMSE: 0.27833755393150134
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="-LiWuApiHjlH">
+<p>The RandomForest model captured most of the variance of the training
+data with an R^2 of .874. The test data performance was only R^2 of .04
+though. Along with the RMSE increase from train to test (.28 to .70 for
+test) means that model displays strong signs of overfitting. This is
+probably because the activity features in the dataset were probably not
+correlated enough to GPA to predict it reliably with a complex model
+like RandomForest. As such, further ahead we tried different
+techniques.</p>
+</div>
+<div class="cell markdown" id="7yXf3NDvG_J7">
+<p>Bar chart to visualize train vs test results.</p>
+</div>
+<div class="cell code" data-execution_count="17"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:498}"
+id="NTpV78JWHHC7" data-outputId="225725b5-6a59-4939-820e-0dcb0de7a9db">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>metrics <span class="op">=</span> [<span class="st">&#39;R²&#39;</span>, <span class="st">&#39;MSE&#39;</span>, <span class="st">&#39;RMSE&#39;</span>]</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>train_scores <span class="op">=</span> [r2_train, mse_train, rmse_train]</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>test_scores <span class="op">=</span> [r2, mse, rmse]</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="bu">len</span>(metrics))</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>width <span class="op">=</span> <span class="fl">0.35</span></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>bars1 <span class="op">=</span> plt.bar(x <span class="op">-</span> width<span class="op">/</span><span class="dv">2</span>, train_scores, width, label<span class="op">=</span><span class="st">&#39;Train&#39;</span>, color<span class="op">=</span><span class="st">&#39;skyblue&#39;</span>)</span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>bars2 <span class="op">=</span> plt.bar(x <span class="op">+</span> width<span class="op">/</span><span class="dv">2</span>, test_scores, width, label<span class="op">=</span><span class="st">&#39;Test&#39;</span>, color<span class="op">=</span><span class="st">&#39;salmon&#39;</span>)</span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Evaluation Metric&#39;</span>)</span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Score&#39;</span>)</span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Random Forest: Train vs Test Performance&#39;</span>)</span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a>plt.xticks(x, metrics)</span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a>plt.grid(axis<span class="op">=</span><span class="st">&#39;y&#39;</span>, linestyle<span class="op">=</span><span class="st">&#39;--&#39;</span>, alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
+<span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bar_group <span class="kw">in</span> [bars1, bars2]:</span>
+<span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> bar <span class="kw">in</span> bar_group:</span>
+<span id="cb25-22"><a href="#cb25-22" aria-hidden="true" tabindex="-1"></a>        height <span class="op">=</span> bar.get_height()</span>
+<span id="cb25-23"><a href="#cb25-23" aria-hidden="true" tabindex="-1"></a>        plt.text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="dv">2</span>, height <span class="op">+</span> <span class="fl">0.01</span>, <span class="ss">f&#39;</span><span class="sc">{</span>height<span class="sc">:.2f}</span><span class="ss">&#39;</span>, ha<span class="op">=</span><span class="st">&#39;center&#39;</span>, va<span class="op">=</span><span class="st">&#39;bottom&#39;</span>)</span>
+<span id="cb25-24"><a href="#cb25-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-25"><a href="#cb25-25" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb25-26"><a href="#cb25-26" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_c765773bf3df40e2a39674271f334b16/f085607f80d9b7e681c39ce51e26ee7d54e64992.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="18"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="qBULKaiM7_0c" data-outputId="49f618c0-354a-4f5f-bf53-ccda5e4ed052">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>arr_r2 <span class="op">=</span> []</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>arr_rmse <span class="op">=</span> []</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>arr_mse <span class="op">=</span> []</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">11</span>):</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&#39;RandomForest: Depth </span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>  rf_classifier <span class="op">=</span> RandomForestRegressor(max_depth<span class="op">=</span>i, random_state<span class="op">=</span><span class="dv">122</span>)</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>  model <span class="op">=</span> rf_classifier.fit(X_train_scaled, y_train)</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>  y_pred <span class="op">=</span> model.predict(X_test_scaled)</span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>  mse <span class="op">=</span> mean_squared_error(y_test, y_pred)</span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>  rmse <span class="op">=</span> np.sqrt(mse)</span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>  r2 <span class="op">=</span> r2_score(y_test, y_pred)</span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>  y_pred_train <span class="op">=</span> model.predict(X_train_scaled)</span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>  mse_train <span class="op">=</span> mean_squared_error(y_train, y_pred_train)</span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a>  rmse_train <span class="op">=</span> np.sqrt(mse_train)</span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a>  r2_train <span class="op">=</span> r2_score(y_train, y_pred_train)</span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&#39;RandomForest: Test Stats&#39;</span>)</span>
+<span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&#39;</span><span class="ch">\t</span><span class="ss">R^2: </span><span class="sc">{</span>r2<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb26-21"><a href="#cb26-21" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&#39;</span><span class="ch">\t</span><span class="ss">MSE: </span><span class="sc">{</span>mse<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb26-22"><a href="#cb26-22" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&#39;</span><span class="ch">\t</span><span class="ss">RMSE: </span><span class="sc">{</span>rmse<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb26-23"><a href="#cb26-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-24"><a href="#cb26-24" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&#39;RandomForest: Train Stats&#39;</span>)</span>
+<span id="cb26-25"><a href="#cb26-25" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&#39;</span><span class="ch">\t</span><span class="ss">R^2: </span><span class="sc">{</span>r2_train<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb26-26"><a href="#cb26-26" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&#39;</span><span class="ch">\t</span><span class="ss">MSE: </span><span class="sc">{</span>mse_train<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb26-27"><a href="#cb26-27" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&#39;</span><span class="ch">\t</span><span class="ss">RMSE: </span><span class="sc">{</span>rmse_train<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb26-28"><a href="#cb26-28" aria-hidden="true" tabindex="-1"></a>  arr_r2.append(r2)</span>
+<span id="cb26-29"><a href="#cb26-29" aria-hidden="true" tabindex="-1"></a>  arr_rmse.append(rmse)</span>
+<span id="cb26-30"><a href="#cb26-30" aria-hidden="true" tabindex="-1"></a>  arr_mse.append(mse)</span>
+<span id="cb26-31"><a href="#cb26-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-32"><a href="#cb26-32" aria-hidden="true" tabindex="-1"></a>plt.plot(<span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">11</span>),arr_r2,label<span class="op">=</span><span class="st">&#39;R^2&#39;</span>)</span>
+<span id="cb26-33"><a href="#cb26-33" aria-hidden="true" tabindex="-1"></a>plt.plot(<span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">11</span>),arr_rmse,label<span class="op">=</span><span class="st">&#39;RMSE&#39;</span>)</span>
+<span id="cb26-34"><a href="#cb26-34" aria-hidden="true" tabindex="-1"></a>plt.plot(<span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">11</span>),arr_mse,label<span class="op">=</span><span class="st">&#39;MSE&#39;</span>)</span>
+<span id="cb26-35"><a href="#cb26-35" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Evaulation metrics for different max_depth values&quot;</span>)</span>
+<span id="cb26-36"><a href="#cb26-36" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Max Depth&#39;</span>)</span>
+<span id="cb26-37"><a href="#cb26-37" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;evaluation score&#39;</span>)</span>
+<span id="cb26-38"><a href="#cb26-38" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb26-39"><a href="#cb26-39" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>RandomForest: Depth 1
+RandomForest: Test Stats
+	R^2: 0.14450597632602635
+	MSE: 0.43734260621665016
+	RMSE: 0.6613188385466198
+RandomForest: Train Stats
+	R^2: 0.2533671155598045
+	MSE: 0.4601461266107159
+	RMSE: 0.6783407157253026
+RandomForest: Depth 2
+RandomForest: Test Stats
+	R^2: 0.1557108354810156
+	MSE: 0.4316144980481225
+	RMSE: 0.6569737422820813
+RandomForest: Train Stats
+	R^2: 0.28794521511559124
+	MSE: 0.43883581613854244
+	RMSE: 0.6624468402359109
+RandomForest: Depth 3
+RandomForest: Test Stats
+	R^2: 0.15109195512717644
+	MSE: 0.4339757456031618
+	RMSE: 0.6587683550408002
+RandomForest: Train Stats
+	R^2: 0.3616436974425634
+	MSE: 0.39341580868029763
+	RMSE: 0.6272286733562948
+RandomForest: Depth 4
+RandomForest: Test Stats
+	R^2: 0.14454073470631146
+	MSE: 0.43732483716134285
+	RMSE: 0.6613054038500993
+RandomForest: Train Stats
+	R^2: 0.4503779818091187
+	MSE: 0.33872931134036605
+	RMSE: 0.5820045629892999
+RandomForest: Depth 5
+RandomForest: Test Stats
+	R^2: 0.13775870834491455
+	MSE: 0.44079192050996213
+	RMSE: 0.6639216222642264
+RandomForest: Train Stats
+	R^2: 0.5424847143666462
+	MSE: 0.2819643909834322
+	RMSE: 0.5310031930068144
+RandomForest: Depth 6
+RandomForest: Test Stats
+	R^2: 0.12805593589957165
+	MSE: 0.4457521372634932
+	RMSE: 0.6676467159085658
+RandomForest: Train Stats
+	R^2: 0.6300996844217488
+	MSE: 0.22796772147670824
+	RMSE: 0.4774596542920755
+RandomForest: Depth 7
+RandomForest: Test Stats
+	R^2: 0.11441728132158235
+	MSE: 0.45272444165529996
+	RMSE: 0.6728480078407753
+RandomForest: Train Stats
+	R^2: 0.7058548526934435
+	MSE: 0.1812801887180899
+	RMSE: 0.425770112523284
+RandomForest: Depth 8
+RandomForest: Test Stats
+	R^2: 0.09798503653870305
+	MSE: 0.4611248752766494
+	RMSE: 0.6790617610178395
+RandomForest: Train Stats
+	R^2: 0.7600027357412753
+	MSE: 0.14790911818546645
+	RMSE: 0.38458954508081267
+RandomForest: Depth 9
+RandomForest: Test Stats
+	R^2: 0.086565047991091
+	MSE: 0.4669629611266569
+	RMSE: 0.6833468819908795
+RandomForest: Train Stats
+	R^2: 0.7992358116397045
+	MSE: 0.12372996898656394
+	RMSE: 0.35175270999178376
+RandomForest: Depth 10
+RandomForest: Test Stats
+	R^2: 0.07298475627734458
+	MSE: 0.47390542946298236
+	RMSE: 0.6884078946838004
+RandomForest: Train Stats
+	R^2: 0.8269844736543567
+	MSE: 0.10662860684358044
+	RMSE: 0.32654036020617794
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_c765773bf3df40e2a39674271f334b16/21d1f7ddb574cda09f5d4d3ca9ff0afceb5afdc8.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="YjEtHDZK9tzJ">
+<p>Instead of Regression, let's bin the GPA target into high and low
+GPA's. From there we will add Logistic Regression and swap the other
+models out for classifiers.</p>
+</div>
+<div class="cell code" data-execution_count="19" id="mwGhlPaS9_4F">
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> StratifiedKFold</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="co"># classifier model imports</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.neighbors <span class="im">import</span> KNeighborsClassifier</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.svm <span class="im">import</span> SVC</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.tree <span class="im">import</span> DecisionTreeClassifier</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestClassifier</span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a><span class="co"># eval metrics</span></span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score, classification_report</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="20"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:178}"
+id="8CFaKSjp-UF1" data-outputId="808e4d31-2186-443d-a03b-c10dd9149a45">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>fitbit_df2 <span class="op">=</span> fitbit_df.copy()</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="co"># binning GPA</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>fitbit_df2[<span class="st">&#39;GPA&#39;</span>] <span class="op">=</span> fitbit_df2[<span class="st">&#39;GPA&#39;</span>].<span class="bu">map</span>(<span class="kw">lambda</span> x: <span class="dv">1</span> <span class="cf">if</span> x <span class="op">&gt;=</span> <span class="fl">3.5</span> <span class="cf">else</span> <span class="dv">0</span>)</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>fitbit_df2[<span class="st">&#39;GPA&#39;</span>].value_counts() <span class="co"># decent class split</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="20">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>GPA</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>333</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>248</td>
+    </tr>
+  </tbody>
+</table>
+</div><br><label><b>dtype:</b> int64</label>
+</div>
+</div>
+<div class="cell code" data-execution_count="21" id="M3vwYsI7-ycA">
+<div class="sourceCode" id="cb30"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>fitbit_df2 <span class="op">=</span> fitbit_df2.drop(columns<span class="op">=</span>[<span class="st">&#39;FatBurn&#39;</span>,<span class="st">&#39;Cardio&#39;</span>,<span class="st">&#39;Peak&#39;</span>,<span class="st">&#39;Life Score&#39;</span>])</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="co">#repartition</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> fitbit_df2.drop(columns<span class="op">=</span>[<span class="st">&#39;GPA&#39;</span>])</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>Y <span class="op">=</span> fitbit_df2[<span class="st">&#39;GPA&#39;</span>]</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X,Y,test_size<span class="op">=</span><span class="fl">0.42</span>,random_state<span class="op">=</span>seed)</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>X_train_scaled <span class="op">=</span> StandardScaler().fit_transform(X_train)</span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>X_test_scaled <span class="op">=</span> StandardScaler().fit_transform(X_test)</span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>cmodels <span class="op">=</span> {</span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;LogisticRegression&#39;</span>: LogisticRegression(),</span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;KNN&#39;</span>: KNeighborsClassifier(),</span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;SVM&#39;</span>: SVC(),</span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;DecisionTree&#39;</span>: DecisionTreeClassifier(),</span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;RandomForest&#39;</span>: RandomForestClassifier()</span>
+<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="22"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="3Udq_RLO_14a" data-outputId="c7a2e526-fba8-4bce-e3cd-f8df54c887a7">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># crossvalidate again w/ different metrics. Using StratifiedKFold now</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>skf <span class="op">=</span> StratifiedKFold(n_splits<span class="op">=</span>k_folds, shuffle<span class="op">=</span><span class="va">True</span>, random_state<span class="op">=</span>seed)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="co"># eva</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name, model <span class="kw">in</span> cmodels.items():</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>  np.random.seed(seed) <span class="co"># reproducibility</span></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>  cv_scores <span class="op">=</span> cross_val_score(model, X_train_scaled, y_train, cv<span class="op">=</span>kf, scoring<span class="op">=</span><span class="st">&#39;accuracy&#39;</span>)</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>name<span class="sc">}</span><span class="ss"> Accuracy: </span><span class="sc">{</span>cv_scores<span class="sc">.</span>mean()<span class="sc">}</span><span class="ss"> (+/- </span><span class="sc">{</span>cv_scores<span class="sc">.</span>std()<span class="sc">}</span><span class="ss">)&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>LogisticRegression Accuracy: 0.6576821773485515 (+/- 0.04659528229147529)
+KNN Accuracy: 0.5953028972783143 (+/- 0.030885215392624645)
+SVM Accuracy: 0.672739244951712 (+/- 0.03999456920971648)
+DecisionTree Accuracy: 0.5981562774363477 (+/- 0.035871643715963256)
+RandomForest Accuracy: 0.6280948200175592 (+/- 0.07240423019974858)
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="23"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="e53wM9lnCWK_" data-outputId="dbb1801e-86ee-4b27-9c98-7ed251956e24">
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># final Training w/ SVM</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> cmodels.get(<span class="st">&quot;SVM&quot;</span>)</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>model.fit(X_train_scaled,y_train)</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> model.predict(X_test_scaled)</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>accuracy <span class="op">=</span> accuracy_score(y_test, y_pred)</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;SVM Accuracy: </span><span class="sc">{</span>accuracy<span class="sc">:.3f}</span><span class="ss">&#39;</span>)</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(classification_report(y_test, y_pred))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>SVM Accuracy: 0.653
+              precision    recall  f1-score   support
+
+           0       0.67      0.73      0.70       136
+           1       0.62      0.56      0.59       109
+
+    accuracy                           0.65       245
+   macro avg       0.65      0.64      0.64       245
+weighted avg       0.65      0.65      0.65       245
+
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="24"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:504}"
+id="vx6YEp2-JzdW" data-outputId="c605c57c-6346-43bf-d240-728c46b64b21">
+<div class="sourceCode" id="cb35"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> ConfusionMatrixDisplay, confusion_matrix</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>cm <span class="op">=</span> confusion_matrix(y_test, y_pred)</span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> [<span class="st">&#39;Low GPA (&lt; 3.5)&#39;</span>, <span class="st">&#39;High GPA (≥ 3.5)&#39;</span>]</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>disp <span class="op">=</span> ConfusionMatrixDisplay(confusion_matrix<span class="op">=</span>cm, display_labels<span class="op">=</span>labels)</span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">5</span>))</span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a>disp.plot(cmap<span class="op">=</span><span class="st">&#39;Blues&#39;</span>, values_format<span class="op">=</span><span class="st">&#39;d&#39;</span>)</span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Confusion Matrix: SVM Classifier (GPA ≥ 3.5)&quot;</span>)</span>
+<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">False</span>)</span>
+<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<pre><code>&lt;Figure size 600x500 with 0 Axes&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_c765773bf3df40e2a39674271f334b16/8e04145a1ff2708a92254e7c3ef0bcbc83fa257e.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="_tl-HFVPJ-jG">
+<p>From the SVM classifier results we can see that the model had an
+overall accuracy of 65 percent. It was better at selecting properly
+students with lower GPA(recall at .73) than those with high GPA(recall
+at .56). The recall and precision were overall quite low though
+especially for the high GPA. There is a possibility that since the
+classes(high or low) were a bit unbalanced, it could have affected
+things.This suggests that the features in our fitbit data might not have
+strong enough signals to predict academic outcomes accurately. However,
+it was better than our original regression attempt with
+RandomForest.</p>
+</div>
+<div class="cell markdown" id="dG1q7ic-NRuA">
+<p>Overall conclusion</p>
+</div>
+<div class="cell markdown" id="Lj3V_4k5Lrqz">
+<p>The fitbit data physical activity metrics are weak predictors of
+student GPA. RandomForest had high training accuracy but low test
+showing high overfitting. SVM was a bit better but the low overall
+accuracy(65 percent) suggests low or no detectable patterns in the data
+for a model.</p>
+</div>
+</body>
+</html>
